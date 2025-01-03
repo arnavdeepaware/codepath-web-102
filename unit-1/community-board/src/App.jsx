@@ -15,9 +15,10 @@ const App = () => {
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title='Mysttik Masala' 
+          description='Indian'
+          imageSrc="https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1200,ar_4:3,g_auto,f_auto/cms/reviews/mysttik-masala/banners/1561989798.42"
+          weblink="https://indianfoodny.com"
         />
 
         <Card 
