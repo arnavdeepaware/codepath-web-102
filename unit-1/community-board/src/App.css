@@ -47,8 +47,10 @@ header h1 {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ensures the image fits the card width */
+  height: 150px; /* Set a fixed height for consistent dimensions */
+  object-fit: cover; /* Ensures the image scales without distortion and fills the area */
+  border-radius: 4px; /* Optional: Adds rounded corners */
 }
 
 .card h3 {
@@ -71,6 +73,11 @@ header h1 {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 15px;
+}
+
+.card a{
+  color: white;
+  text-decoration: none;
 }
 
 .card button:hover {
