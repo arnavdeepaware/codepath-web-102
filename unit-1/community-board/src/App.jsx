@@ -29,9 +29,10 @@ const App = () => {
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title='NY Dosas' 
+          description='Vegetarian'
+          imageSrc="https://nydosas.com/wp-content/uploads/2018/07/maxresdefault-2-1024x630.jpg"
+          weblink="https://nydosas.com/menu/"
         />
 
         <Card 
