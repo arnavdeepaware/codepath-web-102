@@ -24,7 +24,8 @@ const App = () => {
         <Card 
           title='Halal Guys' 
           description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg"
+          weblink="https://thehalalguys.com/menu/"
         />
 
         <Card 
