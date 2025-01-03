@@ -36,9 +36,10 @@ const App = () => {
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title='Jerk Pan' 
+          description='Jamaican'
+          imageSrc="https://infatuation.imgix.net/media/images/reviews/jerk-pan/banners/1561989308.8.jpg"
+          weblink="https://www.allmenus.com/ny/new-york/360888-jerk-pan/menu/" 
         />
 
         <Card 
