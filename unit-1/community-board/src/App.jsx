@@ -50,27 +50,31 @@ const App = () => {
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title='King Souvlaki of Astoria' 
+          description='Greek'
+          imageSrc="https://kingsouvlakinyc.com/wp-content/themes/king/images/location-f.jpg"
+          weblink="https://kingsouvlakinyc.com/" 
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title="Mom's Mono"
+          description='Tibetan'
+          imageSrc="https://infatuation.imgix.net/media/images/reviews/moms-momo/banners/1606245507.888788.png"
+          weblink="https://www.restaurantji.com/ny/jackson-heights/moms-momo-/menu/" 
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title='Patacon Pisao' 
+          description='Venezuelan'
+          imageSrc="https://live.staticflickr.com/8088/8400188739_53b16c7d13_z.jpg" 
+          weblink="https://www.pataconpisaonyc.com/menus/"
         />
 
         <Card 
-          title='Halal Guys' 
-          description='Middle Eastern'
-          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+          title='Makina Cafe' 
+          description='Ethiopian'
+          imageSrc="https://fastly.4sqi.net/img/general/600x600/784042_29bZZHPGisHnWqyIuuXMo8D2zzW7QS6Hft7Vv15SH_I.jpg"
+          weblink="https://makinacafenyc.com/" 
         />
          
       </div>
