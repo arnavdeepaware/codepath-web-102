@@ -24,6 +24,48 @@ const App = () => {
           description='Middle Eastern'
           imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
         />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
+
+        <Card 
+          title='Halal Guys' 
+          description='Middle Eastern'
+          imageSrc="https://www.vmcdn.ca/f/files/via/images/food/halal-guys-chicken-platter.jpg" 
+        />
          
       </div>
     </div>
