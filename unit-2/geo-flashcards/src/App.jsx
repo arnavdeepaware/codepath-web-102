@@ -12,7 +12,11 @@ const App = () => {
         <h2>The Ultimate Geo-Champion</h2>
         <h3>How good are you with places? Test all your knowledge here!</h3>
         <h4>Number of Cards: {cards}</h4>
+      </div>
 
+      <div className='game-container'>
+        <p>Question: What is the capital of France?</p>
+        <p>Answer: Paris</p>
       </div>
 
     </div>
