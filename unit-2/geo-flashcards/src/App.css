@@ -81,32 +81,21 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  transition: transform 1s;
+}
+
+.game-container.animate {
+  transform: rotateY(360deg);
 }
 
 .question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the question takes up the full height of its container */
+  text-align: center; /* Center the text inside the question div */
   font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 
-.answers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.answers button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  color: rgb(63, 62, 62);
-}
-
-.answers button:hover {
-  background-color: #f0f0f0;
-}
 
 

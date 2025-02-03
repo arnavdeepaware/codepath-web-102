@@ -20,12 +20,6 @@ const App = () => {
           <div className='question'>
             <h3>What is the capital of France?</h3>
           </div>
-          <div className='answers'>
-            <button>Paris</button>
-            <button>London</button>
-            <button>Berlin</button>
-            <button>Madrid</button>
-          </div>
         </div>
       </div>
 
