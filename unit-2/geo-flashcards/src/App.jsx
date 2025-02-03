@@ -12,11 +12,21 @@ const App = () => {
         <h2>The Ultimate Geo-Champion</h2>
         <h3>How good are you with places? Test all your knowledge here!</h3>
         <h4>Number of Cards: {cards}</h4>
+        <h4>Score: {score}</h4>
       </div>
 
       <div className='game-container'>
-        <p>Question: What is the capital of France?</p>
-        <p>Answer: Paris</p>
+        <div className='game'>
+          <div className='question'>
+            <h3>What is the capital of France?</h3>
+          </div>
+          <div className='answers'>
+            <button>Paris</button>
+            <button>London</button>
+            <button>Berlin</button>
+            <button>Madrid</button>
+          </div>
+        </div>
       </div>
 
     </div>
