@@ -37,6 +37,19 @@ const App = () => {
     setCurrentCardIndex((currentCardIndex - 1 + cards) % cards);
   };
 
+  const handlePreviousCardClick = () => {
+    handleCardClick();
+    previousCard();
+    
+  };
+
+  const handleNextCardClick = () => {
+    handleCardClick();
+    nextCard();
+    
+    
+  };
+
   return (
     <div className="App">
       <div className='header'>
@@ -60,14 +73,13 @@ const App = () => {
       </div>
 
       <div className='directions'>
-          <div className='direction-button' onClick={previousCard}>
+          <div className='direction-button' onClick={isFlipped ? handlePreviousCardClick : null}>
             <button>←</button>
           </div>
-          <div className='direction-button' onClick={nextCard}>
+          <div className='direction-button' onClick={isFlipped ? handleNextCardClick : null}>
             <button>→</button>
           </div>
       </div>
-
     </div>
   )
 }
