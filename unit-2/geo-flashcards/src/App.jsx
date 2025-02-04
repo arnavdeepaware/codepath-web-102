@@ -33,6 +33,15 @@ const App = () => {
         </div>
       </div>
 
+      <div className='directions'>
+          <div className='direction-button'>
+            <button>←</button>
+          </div>
+          <div className='direction-button'>
+            <button>→</button>
+          </div>
+      </div>
+
     </div>
   )
 }
