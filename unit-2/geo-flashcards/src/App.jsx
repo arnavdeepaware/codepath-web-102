@@ -5,6 +5,11 @@ const App = () => {
 
   const [cards, setCards] = useState(10);
   const [score, setScore] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
 
   return (
     <div className="App">
@@ -16,7 +21,7 @@ const App = () => {
       </div>
 
       <div className='game-container'>
-        <div className='flip-card'>
+        <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
           <div className='flip-card-inner'>
             <div className='flip-card-front'>
               <h3>What is the capital of France?</h3>
