@@ -11,6 +11,32 @@ const App = () => {
     setIsFlipped(!isFlipped);
   };
 
+  const cardsArray = [
+    { question: "What is the capital of France?", answer: "Paris" },
+    { question: "What is the capital of Spain?", answer: "Madrid" },
+    { question: "What is the capital of Italy?", answer: "Rome" },
+    { question: "What is the capital of Germany?", answer: "Berlin" },
+    { question: "What is the capital of Japan?", answer: "Tokyo" },
+    { question: "What is the capital of Canada?", answer: "Ottawa" },
+    { question: "What is the capital of Australia?", answer: "Canberra" },
+    { question: "What is the capital of Brazil?", answer: "Brasília" },
+    { question: "What is the capital of India?", answer: "New Delhi" },
+    { question: "What is the capital of Russia?", answer: "Moscow" },
+  ];
+
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const currentCard = cardsArray[currentCardIndex];
+
+  //Function to move to next card
+  const nextCard = () => {
+    setCurrentCardIndex((currentCardIndex + 1) % cards);
+  };
+
+  //Function to move to previous card
+  const previousCard = () => {
+    setCurrentCardIndex((currentCardIndex - 1 + cards) % cards);
+  };
+
   return (
     <div className="App">
       <div className='header'>
@@ -24,20 +50,20 @@ const App = () => {
         <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
           <div className='flip-card-inner'>
             <div className='flip-card-front'>
-              <h3>What is the capital of France?</h3>
+              <h3>{currentCard.question}</h3>
             </div>
             <div className='flip-card-back'>
-              <h3>Paris</h3>
+              <h3>{currentCard.answer}</h3>
             </div>
           </div>
         </div>
       </div>
 
       <div className='directions'>
-          <div className='direction-button'>
+          <div className='direction-button' onClick={previousCard}>
             <button>←</button>
           </div>
-          <div className='direction-button'>
+          <div className='direction-button' onClick={nextCard}>
             <button>→</button>
           </div>
       </div>
