@@ -1,16 +1,22 @@
 import './App.css';
 import { useState } from 'react';
 
+/**
+ * The App component is the main component of the Geo Flashcards application.
+ * It manages the state of the flashcards, including the current score, 
+ * whether the card is flipped, and the index of the current card.
+ * 
+ * @component
+ */
 const App = () => {
 
-  const [cards, setCards] = useState(10);
   const [score, setScore] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const handleCardClick = () => {
-    setIsFlipped(!isFlipped);
-  };
-
+  /**
+   * Array of flashcard objects, each containing a question and an answer.
+   * @type {Array<{question: string, answer: string}>}
+   */
   const cardsArray = [
     { question: "What is the capital of France?", answer: "Paris" },
     { question: "What is the capital of Spain?", answer: "Madrid" },
@@ -27,38 +33,45 @@ const App = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const currentCard = cardsArray[currentCardIndex];
 
-  //Function to move to next card
+  /**
+   * Toggles the flipped state of the current card.
+   */
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  /**
+   * Advances to the next card in the array. If the current card is the last one,
+   * it wraps around to the first card.
+   */
   const nextCard = () => {
-    setCurrentCardIndex((currentCardIndex + 1) % cards);
+    setCurrentCardIndex((currentCardIndex + 1) % cardsArray.length);
   };
 
   //Function to move to previous card
   const previousCard = () => {
-    setCurrentCardIndex((currentCardIndex - 1 + cards) % cards);
+    setCurrentCardIndex((currentCardIndex - 1 + cardsArray.length) % cardsArray.length);
+    setIsFlipped(false);
   };
 
-  const handlePreviousCardClick = () => {
-    handleCardClick();
-    previousCard();
-    
-  };
-
+  //Function to integrate flip with next button
   const handleNextCardClick = () => {
     handleCardClick();
     nextCard();
-    
-    
   };
 
   return (
     <div className="App">
+
+      {/* Header */}
       <div className='header'>
         <h2>The Ultimate Geo-Champion</h2>
         <h3>How good are you with places? Test all your knowledge here!</h3>
-        <h4>Number of Cards: {cards}</h4>
+        <h4>Number of Cards: {cardsArray.length}</h4>
         <h4>Score: {score}</h4>
       </div>
 
+      {/*FlashCard */}
       <div className='game-container'>
         <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
           <div className='flip-card-inner'>
@@ -72,8 +85,9 @@ const App = () => {
         </div>
       </div>
 
+      {/* Direction Buttons */}
       <div className='directions'>
-          <div className='direction-button' onClick={isFlipped ? handlePreviousCardClick : null}>
+          <div className='direction-button' onClick={previousCard}>
             <button>←</button>
           </div>
           <div className='direction-button' onClick={isFlipped ? handleNextCardClick : null}>
