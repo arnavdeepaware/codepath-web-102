@@ -16,9 +16,14 @@ const App = () => {
       </div>
 
       <div className='game-container'>
-        <div className='game'>
-          <div className='question'>
-            <h3>What is the capital of France?</h3>
+        <div className='flip-card'>
+          <div className='flip-card-inner'>
+            <div className='flip-card-front'>
+              <h3>What is the capital of France?</h3>
+            </div>
+            <div className='flip-card-back'>
+              <h3>Paris</h3>
+            </div>
           </div>
         </div>
       </div>
