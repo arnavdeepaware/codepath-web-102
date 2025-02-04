@@ -1,4 +1,4 @@
-##GEO CHAMPIONS
+## GEO CHAMPIONS
 
 
 ### [Demo Link]([https://geo-champion.vercel.app)
