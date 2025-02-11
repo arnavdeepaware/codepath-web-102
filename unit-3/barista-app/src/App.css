@@ -37,142 +37,169 @@ li:hover {
 
 .mini-container {
   background-color: white;
-  padding: 2rem;
-  margin: 1rem 0;
+  padding: 1.5rem;m;
+  margin: 0.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px; width: 200px;
+  flex: 0 1 auto;  flex: 0 1 auto;
 }
 
 .mini-header {
-  background-color: rgb(226, 195, 147);
+  background-color: rgb(226, 195, 147);b(226, 195, 147);
   padding: 1rem;
   border-radius: 10px;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-weight: 500;
+  text-align: center;r;
+  margin-bottom: 1rem; margin-bottom: 1rem;
+  font-weight: 500;  font-weight: 500;
 }
 
 #wrong {
-  background-color: rgb(219, 93, 93);
-  color: white;
+  background-color: rgb(219, 93, 93); background-color: rgb(219, 93, 93);
+  color: white;  color: white;
 }
 
 #correct {
-  background-color: rgb(191, 116, 191);
-  color: white;
+  background-color: rgb(191, 116, 191); background-color: rgb(191, 116, 191);
+  color: white;  color: white;
 }
 
 .answer-space {
-  background-color: rgb(226, 195, 147);
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 1rem 0;
-  min-height: 20px;
-  text-align: center;
+  background-color: rgb(226, 195, 147);b(226, 195, 147);
+  padding: 0.8rem;;
+  border-radius: 10px;px;
+  margin: 0.5rem 0;
+  min-height: 20px; min-height: 20px;
+  text-align: center;  text-align: center;
+  width: auto;
 }
 
-.radio-buttons {
+.radio-buttons { {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
+  flex-direction: column; flex-direction: column;
+  gap: 0.3rem;  gap: 0.3rem;
 }
 
-button.newdrink {
-  background-color: #4a3500;
+.radio-buttons li {
+  margin: 0; margin: 0;
+  padding: 0.4rem 0.8rem;  padding: 0.4rem 0.8rem;
+}
+
+button.newdrink { {
+  background-color: #4a3500;lor: #4a3500;
   font-size: 1.2rem;
 }
 
 .button {
-  background-color: rgba(138, 98, 12, 0.942);
+  background-color: rgba(138, 98, 12, 0.942);, 98, 12, 0.942);
   color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  border: none; border: none;
+  padding: 0.8rem 1.5rem;  padding: 0.8rem 1.5rem;
+  border-radius: 8px;: 8px;
   cursor: pointer;
   font-weight: 500;
-  transition: all 0.2s ease;
-  margin: 0.5rem;
+  transition: all 0.2s ease; transition: all 0.2s ease;
+  margin: 0.5rem;  margin: 0.5rem;
 }
 
 .button:hover {
-  background-color: rgba(138, 98, 12, 1);
-  transform: translateY(-1px);
+  background-color: rgba(138, 98, 12, 1); background-color: rgba(138, 98, 12, 1);
+  transform: translateY(-1px);  transform: translateY(-1px);
 }
 
 .title {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 0; 0;
 }
 
-.title-container {
-  text-align: center;
-  margin-bottom: 3rem;
-  background-color: rgb(226, 195, 147);
+.title-container {title-container {
+  text-align: center;  text-align: center;
+  margin-bottom: 3rem;;
+  background-color: rgb(226, 195, 147);-color: rgb(226, 195, 147);
   padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  border-radius: 15px;x;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}}
 
 .title-container h1 {
   margin: 0;
-  color: #4a3500;
-  font-size: 2.5rem;
+  color: #4a3500; color: #4a3500;
+  font-size: 2.5rem;  font-size: 2.5rem;
 }
 
 .title-container p {
-  margin-top: 0.5rem;
-  color: #666;
+  margin-top: 0.5rem; margin-top: 0.5rem;
+  color: #666;  color: #666;
 }
 
-.drink-container {
+.drink-container {{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;tween;
 }
 
 .logo {
-  height: 6em;
+  height: 6em; height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
-}
+  transition: filter 300ms; transition: filter 300ms;
+}}
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffaa);: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.logo.react:hover {go.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);er: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
+@keyframes logo-spin {keyframes logo-spin {
+  from {  from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); transform: rotate(360deg);
+  } }
+}}
+
+@media (prefers-reduced-motion: no-preference) {-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo { a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;    animation: logo-spin infinite 20s linear;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.card {.card {
+  padding: 2em;ing: 2em;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+.read-the-docs {cs {
+  color: #888; color: #888;
+}}
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; flex-direction: row;
+  flex-wrap: wrap;  flex-wrap: wrap;
+  justify-content: center;nter;
   gap: 1rem;
 }
 
-h3 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  margin-top: 2rem;  gap: 1rem;  justify-content: center;  display: flex;  width: 100%;.buttons-container {/* Add this new style for the buttons container */}  margin-right: 0.5rem;input[type="radio"] {}  color: #4a3500;  margin: 0.5rem 0;h3 {h3 {
   margin: 0.5rem 0;
   color: #4a3500;
 }
@@ -180,3 +207,13 @@ h3 {
 input[type="radio"] {
   margin-right: 0.5rem;
 }
+
+/* Add this new style for the buttons container */
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}  gap: 1rem;
+  margin-top: 2rem;
