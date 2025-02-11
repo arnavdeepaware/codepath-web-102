@@ -25,10 +25,43 @@ const BaristaForm = () => {
             blended: "",
         });
 
+        setCorrectTemp('');
+        setCorrectMilk(''); 
+        setCorrectSyrup('');    
+        setCorrectBlended('');
+
         getNewDrink();
     };
 
-    const onCheckAnswer = () => { };
+    const onCheckAnswer = () => {
+        if (trueRecipe.temp != inputs['temperature']) {
+            setCheckedTemperature('wrong');
+        }
+        else {
+            setCheckedTemperature("correct");
+        }
+
+        if (trueRecipe.milk != inputs['milk']) {
+            setCheckedMilk('wrong');
+        }
+        else {
+            setCheckedMilk("correct");
+        }
+
+        if (trueRecipe.syrup != inputs['syrup']) {
+            setCheckedSyrup('wrong');
+        }
+        else {
+            setCheckedSyrup("correct");
+        }
+
+        if (trueRecipe.blended != inputs['blended']) {
+            setCheckedBlended('wrong');
+        }
+        else {
+            setCorrectBlended("correct");
+        }
+    };
 
     const [inputs, setInputs] = useState({
         temperature: "",
@@ -47,6 +80,11 @@ const BaristaForm = () => {
     const [drink, setDrink] = useState('');
     const [trueRecipe, setTrueRecipe] = useState('');
 
+    const[correct_temp, setCorrectTemp] = useState('');
+    const[correct_milk, setCorrectMilk] = useState('');
+    const[correct_syrup, setCorrectSyrup] = useState('');   
+    const[correct_blended, setCorrectBlended] = useState('');
+
     return (
         <div>
             <h2>Hi, I'd like to order a:</h2>
@@ -56,7 +94,7 @@ const BaristaForm = () => {
             </div>
             <form>
                 <h3>Temperature</h3>
-                <div className="answer-space" >
+                <div className="answer-space" id={correct_temp}>
                     {inputs["temperature"]}
                 </div>
                 <RecipeChoices
@@ -70,7 +108,7 @@ const BaristaForm = () => {
                 />
 
                 <h3>Milk</h3>
-                <div className="answer-space" >
+                <div className="answer-space" id={correct_temp}>
                     {inputs["milk"]}
                 </div>
                 <RecipeChoices
@@ -84,7 +122,7 @@ const BaristaForm = () => {
                 />
 
                 <h3>Syrup</h3>
-                <div className="answer-space" >
+                <div className="answer-space" id={correct_temp}>
                     {inputs["syrup"]}
                 </div>
                 <RecipeChoices
@@ -98,7 +136,7 @@ const BaristaForm = () => {
                 />
 
                 <h3>Blended</h3>
-                <div className="answer-space" >
+                <div className="answer-space" id={correct_temp}>
                     {inputs["blended"]}
                 </div>
                 <RecipeChoices
